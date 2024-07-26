@@ -24,4 +24,13 @@
 		],
 		"description": "Log output to console"
 	}
+	,
+	"print to partition": {
+        "prefix": "pp",
+        "body": [
+            "console.log('--------------$1--------------');",
+            "$2"
+        ],
+        "description": "Partition Log output to console"
+    }
 }
