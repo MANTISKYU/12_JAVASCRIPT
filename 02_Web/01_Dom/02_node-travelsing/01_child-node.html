@@ -60,28 +60,31 @@
 
     </script>
 
-<h3>자식 노드 존재 확인</h3>
-<pre>
-Node.prototype.hasChildNodes 메서드를 사용하여 자식 노드 존재 여부를 확인한다.
-텍스트 노드를 포함하여 자식 노드의 존재를 확인한다.
-</pre>
-<ol id="empty">
-</ol>
-<script>
-const $empty = document.getElementById('empty');
+    <h3>자식 노드 존재 확인</h3>
+    <pre>
+    Node.prototype.hasChildNodes 메서드를 사용하여 자식 노드 존재 여부를 확인한다.
+    텍스트 노드를 포함하여 자식 노드의 존재를 확인한다.
+    </pre>
+    <ol id="empty"></ol>
+    <script>
+    console.log('--------------hasNodes--------------');
+    
+    const $empty = document.getElementById('empty');
 
-console.log($node.hasChildNodes()); // true
-console.log($element.hasChildNodes());  // true
+    console.log($node.hasChildNodes()); // true
+    console.log($elemnt.hasChildNodes());  // true
 
-// 텍스트 노드를 포함하여 확인하므로 
-// ol 태그 사이를 개행하면 true, 개행하지 않으면 false를 반환한다.
-console.log($empty.hasChildNodes());
+    // 텍스트 노드를 포함하여 확인하므로 
+    // ol 태그 사이를 개행하면 true, 개행하지 않으면 false를 반환한다.
+    console.log($empty.hasChildNodes());
 
-// 텍스트 노드를 제외한 요소 노드의 존재를 확인하고 싶다면
-// children.length, childElmentCount 등을 사용하여 확인
-console.log(!!$empty.children.length);
-console.log(!!$empty.childElementCount);
+    // 텍스트 노드를 제외한 요소 노드의 존재를 확인하고 싶다면
+    // children.length, childElmentCount 등을 사용하여 확인
+    console.log(!!$empty.children.length);
+    console.log(!!$empty.childElementCount);
 
-</script>
+    </script>
+
+
 </body>
 </html>
